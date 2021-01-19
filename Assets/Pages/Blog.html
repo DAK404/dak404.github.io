@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- Head : All metadata and HTML information goes here -->
+	<head>
+		<!--Website Metadata-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="DAK's Official Website!">
+		<meta name="keywords" content="Programming, coding, student, streaming, gaming, Nion, DAK">
+		<meta name="author" content="DAK">
+		<link rel="icon" type="image/png" href="../Images/favicon.ico">
+		<link rel="stylesheet" href="../Stylesheet/style.css">
+		
+		<!--Website Title-->
+		<title>DAK's Blog | Official Website</title>
+	</head>
+	
+	<!-- Body : The Website content below is displayed on the browser -->
+	<body>
+	
+		<!-- Header : The elements which are displayed at the top of the page -->
+		<header>
+		
+			<!-- Display the Website branding here -->
+			<div class="container">
+				<img src="../Images/branding.png">
+			</div>
+			
+			<!-- Navigation Menu : Displays a list of other accessible pages -->
+			<nav>
+				
+				<!-- List of the pages, hyperlinking the same to the target -->
+				<ul>
+					<a href="../../index.html"><li>Home</li></a>
+					<a href="about.html"><li>About</li></a>
+					<li class="current">Blog</li>
+					<a href="Contact.html"><li>Contact Me</li></a>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<!-- Section "Newsletter" : Display the news here -->
+		<section id="newsletter">
+			<!-- Marquee : Move the news right to left to read it -->
+			<marquee onmouseover="this.stop();" onmouseout="this.start();">| I plan to resume streaming on Twitch in a few weeks. Watch the streams on <a href="https://twitch.tv/dak404">Twitch</a>! | My friends and I have opened an Instagram page, relating to motorsports and Formula 1, called <a href="https://www.instagram.com/chicanelane/">Chicane Lane</a>. Follow our page for motorsport/F1 news and memes! | Did you find the 404 Easter Egg on my website? Let me know if you have! |</marquee>
+		</section>
+
+    <section id="main">
+	
+      <div class="container">
+	  
+	  
+        <aside id="sidebar">
+          <div class="dark">
+            <h2>Timeline/QuickLink Archives:</h2>
+            <p>NEW! : Hover/touch the year/month to navigate through posts easily!</p>
+			<ul class="year">
+                 <li>2021
+                 <ul>
+                    <li class="month">January
+                        <ul class="posts">
+                         <a href="#19-Jan-2020"><li>#2. Projects, Progress and Plans</li></a>
+               			<a href="#5-Jan-2020"><li>#1. Welcome To My Website! (and Blog)</li></a>
+                        </ul>
+                    </li>
+                 </ul>
+                </li>
+			</ul>
+          </div>
+        </aside>
+		
+		
+        <article id="main-col">
+          <h1>DAK's Bl@g</h1>
+          <ul id="services">
+
+            <li class="blogEntry" id="19-Jan-2020">
+			
+			  <h2 class="heading">Projects, Progress and Plans</h2>  
+			  <h4 class="time">20-January-2020  0740 PM +0530 GMT</h4>
+              <p>Hello!</p>
+              <div style="border: 1px solid"> 
+              <p style="margin: 10px">Before we start off with this post, here's a massive shoutout to Chicane Lane Instagram webpage! This page is maintained by my friends, and they cover all sorts of news about Formula 1 and Motorsports! Follow it if you want 2021 to be better than 2020 xD<BR>To view the Instagram page, simply press the logo below!</p>
+              <center><a href="https://www.instagram.com/chicanelane/"><img src="../Images/Blog/ChicaneLane.png" width="150px"></a></center></div>
+			  <p>This is an update about my blogging schedule, projects, progress and the plans for the same.</p>
+              <ul>
+                  <li>
+                      <h3><u>Projects</u></h3>
+                      <p>Since 2016, there would be a new version of Project Nion being developed under a certain codename. This was the same until 2020. In 2020, we saw 2 cycles: Zen Quantum and Mosaic. Each cycle lasted for 6 months, which boosted the overall program efficiency, optimization and size. Mosaic's architecture was good, but not the best. It borrowed and revived a ton of ideas which was shelved since 2015. The development cycles helped me fix fundamental security issues too. But again, I spent a lot of time, working on the project which saturated my schedule. I took a small break to re-evaluate on ideas and code samples, written way back since 2015, to get a few ideas on how the project needs to continue.<p>
+                         <ol><p>Current design and plans for Lamatshu is as follows.</p>
+                             <li><b><u>Modularity:</u></b> The program needs to be highly modular, which means that irrespective of the frontend, the backend implementation must work as a single unit, while providing a flexible architecture.</li>
+                             <li><b><u>Platform Independence:</u></b> This aspect focus was the least until the Mosaic Iteration, where the architectural drawbacks were reflected when trying to run Mosaic on Linux and different platforms. Lamatshu's concept and prototyped architecture proved to be efficient in many aspects which solves the issues and enables a hassle-less experience on any platform.</li>
+                             <li><b><u>Multi-Threading and GUI:</u></b> Multi-threading is an efficient way to enable even distribution of tasks across multiple threads. Since Java&trade; supports multi-threading, I am considering on including APIs which will make programs run using multiple threads.</p><p>The aspect of a GUI has been almost non-existent since 2013. But looking at people's preferences and ideas, it would make sense to add a GUI mode to appeal to users who don't really prefer a command line interface. Graphical modes might increase memory usage, hence, it might be restricted only to the client mode, whilst the server code will be CLI based.</li>
+                             <li><b><u>Integral Engine:</u></b> I plan to create a library called the <i>Integral Engine</i> which will perform fast math based calculations on Integration and Differentiation. This would mean that using an API, this library could be used for various workloads ranging from graphics to data science. THIS FEATURE IS NOT YET CONFIRMED TO BE INCLUDED, THIS FEATURE MAY NOT MAKE IT TO THE EARLY OR FINAL BUILDS OF LAMATSHU.</li>
+                        </ol>
+                        <p>Progress: Lamatshu has a heavily modified core/kernel called "Amethyst" with a new file structure which will allow administrators to work with multiple kernels from different iterations. Basic APIs are being implemented and probably in the month of May or June in 2021, the code will be complete for a stable release.</p> 
+                  </li>
+                  <li>
+                      <h3><u>Blogging Schedule</u></h3>
+                          <p>I plan to write a blog update every sunday or so, based on the project status and other important content such as gaming, programming and streaming. I might even cover generic content, covering my opinions on a given topic. I might miss out on writing or updating the blog on a few Sundays, but I shall try to be as regular as possible in terms of posting blog content here.</p>
+                  </li>
+                  <li>
+                      <h3><u>Future Of Content Creation</u></h3>
+                          <p>I shall begin streaming on Twitch in a few weeks. I have a lot planned for this year in terms of YouTube content and in programming too. I will cover content about how to get started with programming, which might (I hope) help learners and those new to coding understand and practice coding in an efficient and elegant way. I shall try to make the videos as simple as possible which should help people to understand the concepts easily.</p>
+                  </li>
+             </ul>
+             <p><b>TL;DR</b>, I'm back! (sort of xD)</p>
+			  <p>Until next time then!<BR>DAK</p>
+			  <a href="#sidebar">Back to Top</a>
+
+            </li>
+            
+            <li class="blogEntry" id="5-Jan-2020">
+			
+			  <h2 class="heading">Welcome To My Website! (and Blog)</h2>  
+			  <h4 class="time">05-January-2020  0141 AM +0530 GMT</h4>
+              <p>Hello all!</p>
+			  <p>A very Happy New Year to all! I welcome you all to my website's brand new Blog! I shall be posting content here frequently about coding, gaming or any random topic here. In this post, I am covering the Blog system. This has been done in such a way that its an easy way to express myself in this space which will talk about anything and everything.</p>
+			  <p>Navigation has been made easy! On the right hand side, you will see links to all my posts which will take you to the desired post. On the left hand side you can read my blog content, either manually scrolling through each post or using the quick links. At the end of the blog you shall find a link which will take you back to the top, which will help mobile users navigate through the page.</p>
+			  <p>I hope you guys like my website. I am working on Lamatshu, a successor to Project Mosaic. The repository will be made public as soon as the code is stable Stay tuned!<BR></p>
+			  <p>To an amazing year ahead,<BR>DAK</p>
+			  <a href="#sidebar">Back to Top</a>
+
+            </li>
+          
+		  </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+		<p>Last Updated On : 5-January-2020 0141 +0530 GMT</p>
+    </footer>
+  </body>
+</html>
