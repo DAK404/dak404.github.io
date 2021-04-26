@@ -1,21 +1,21 @@
 @font-face { 
-	font-family: Orbitron; 
-	src: url('../Fonts/Orbitron.ttf');
+  font-family: Orbitron; 
+  src: url('../Fonts/Orbitron.ttf');
 }
 
 @font-face { 
-	font-family: ROG;
-	font-weight:bold;	
-	src: url('../Fonts/ROG.ttf');
+  font-family: ROG;
+  font-weight:bold;	
+  src: url('../Fonts/ROG.ttf');
 }
 
 @font-face { 
-	font-family: ChakraPetch;	
-	src: url('../Fonts/ChakraPetch.ttf');
+  font-family: ChakraPetch;	
+  src: url('../Fonts/ChakraPetch.ttf');
 }
 
 a{
-	color:#ffffff;
+  color:#ffffff;
 }
 
 body{
@@ -56,11 +56,11 @@ ul{
 }
 
 .dark h2{
-	text-align:center;
+  text-align:center;
 }
 
 .dark a{
-	color:#FFFFFF;
+  color:#FFFFFF;
 }
 
 .dark li{
@@ -93,9 +93,9 @@ header{
 }
 
 header img{
-	display: inline-block;
-	margin:auto;
-	max-width: 250px;
+  display: inline-block;
+  margin:auto;
+  max-width: 250px;
 }
 
 header a{
@@ -201,46 +201,46 @@ header li:hover{
 }
 
 #summary .summary-content h3{
-	font-family:ROG;
+  font-family:ROG;
    font-weight:normal;
    font-size: 30px;
 }
 
 #summary .summary-content p{
-	text-align:center;
-	margin:auto;
+  text-align:center;
+  margin:auto;
 }
 
 #summary .summary-content img{
-	margin:auto;
-	max-width:100px;
+  margin:auto;
+  max-width:100px;
 }
 
 #summary .summary-content a{
-	color:#FF0000;
+  color:#FF0000;
 }
 
 .nF h1{
-	text-align:center;
-	text-transform: uppercase;
-	font-family:ROG;
+  text-align:center;
+  text-transform: uppercase;
+  font-family:ROG;
     font-weight:normal;
-	font-size:128px;
+  font-size:128px;
 }
 
 .nF h2{
-	text-align:center;
-	text-transform: uppercase;
-	font-family:ROG;
+  text-align:center;
+  text-transform: uppercase;
+  font-family:ROG;
     font-weight:normal;
-	font-size:56px;
+  font-size:56px;
 }
 
 .nF p{
-	text-align:center;
-	font-family:ROG;
+  text-align:center;
+  font-family:ROG;
     font-weight:normal;
-	font-size:25px;
+  font-size:25px;
 }
 
 /* Sidebar */
@@ -257,9 +257,9 @@ article#main-col{
 }
 
 article#main-col h1{
-	text-align:center;
-	font-size: 35px;
-	margin:25px;
+  text-align:center;
+  font-size: 35px;
+  margin:25px;
 }
 
 /* Services */
@@ -284,18 +284,18 @@ ul#services{
 
 #services h2{
     border: #000000 solid 1px;
-	text-align:center;
-	text-transform: uppercase;
+  text-align:center;
+  text-transform: uppercase;
     font-weight:normal;
-	padding:0px;
-	margin:0px;
-	font-size:40px;
+  padding:0px;
+  margin:0px;
+  font-size:40px;
 }
 
 #services .time{
-	font-size:12.5px;
-	font-weight:normal;
-	text-align:center;	
+  font-size:12.5px;
+  font-weight:normal;
+  text-align:center;	
 }
 
 #services a{
@@ -312,34 +312,34 @@ footer{
 }
 
 .content-box{
-	background-color: #333333;
-	margin: 20px auto auto auto;
+  background-color: #333333;
+  margin: 20px auto auto auto;
 }
 
 .content-box h1{
-	padding:10px;
-	font-family: Orbitron;
-	font-size: 50px;
-	font-weight: normal;
-	text-align:center;
-	margin:auto;
+  padding:10px;
+  font-family: Orbitron;
+  font-size: 50px;
+  font-weight: normal;
+  text-align:center;
+  margin:auto;
 }
 
 .content-box p{
-	text-align:justify;
-	padding: 0 40px 40px 40px;
-	font-size:20px;
+  text-align:justify;
+  padding: 0 40px 40px 40px;
+  font-size:20px;
 }
 
 .content-box ul{
-	text-align:left;
-	font-size:20px;
-	padding: 0px 60px 0 60px;
+  text-align:left;
+  font-size:20px;
+  padding: 0px 60px 0 60px;
 }
 
 .content-box li{
-	display: list-item;
-	font-size:17px;
+  display: list-item;
+  font-size:17px;
 }
 
 /* Media Queries */
@@ -359,7 +359,7 @@ footer{
 
   .dark{
       display:block;
-	  text-align:center;
+    text-align:center;
   }
 
   .dark li{
