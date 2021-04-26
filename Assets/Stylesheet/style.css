@@ -31,7 +31,7 @@ body{
 .container{
   width:80%;
   margin:auto;
-  overflow:hidden;
+  overflow: hidden; 
 }
 
 ul{
@@ -343,7 +343,7 @@ footer{
 }
 
 /* Media Queries */
-@media(max-width: 720px){
+@media(max-width: 1080px){
   header #branding,
   header nav,
   header nav li,
