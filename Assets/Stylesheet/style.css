@@ -169,6 +169,7 @@ header li:hover{
   font-family:Orbitron;
   font-weight:normal;
   margin-top:200px;
+  text-align: center;
   font-size:65px;
 }
 
@@ -181,7 +182,7 @@ header li:hover{
   padding:5px;
   color:#ffffff;
   background:#555555;
-  }
+}
 
 #newsletter h1{
   text-align: center;
@@ -202,8 +203,8 @@ header li:hover{
 
 #summary .summary-content h3{
   font-family:ROG;
-   font-weight:normal;
-   font-size: 30px;
+  font-weight:normal;
+  font-size: 30px;
 }
 
 #summary .summary-content p{
@@ -224,7 +225,7 @@ header li:hover{
   text-align:center;
   text-transform: uppercase;
   font-family:ROG;
-    font-weight:normal;
+  font-weight:normal;
   font-size:128px;
 }
 
@@ -366,10 +367,6 @@ footer{
       text-align:center;      
   }
   
-  header{
-    padding-bottom:20px;
-  }
-  
   .content-box h1{
         font-size:30px;
   }
@@ -380,9 +377,6 @@ footer{
 
   #summary .summary-content{
     width: 100%;
-  }
-  #showcase h1{
-    margin-top:40px;
   }
 
   #newsletter button, .quote button{
