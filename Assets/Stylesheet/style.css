@@ -378,6 +378,9 @@ footer{
         font-size:100%;
   }
 
+  #summary .summary-content{
+    width: 100%;
+  }
   #showcase h1{
     margin-top:40px;
   }
