@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Head : All metadata and HTML information goes here -->
+    <head>
+        <!--Website Metadata-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="DAK's Official Website!">
+        <meta name="keywords" content="Programming, coding, student, streaming, gaming, Nion, DAK">
+        <meta name="author" content="DAK">
+        <link rel="icon" type="image/png" href="../Images/favicon.ico">
+        <link rel="stylesheet" href="../Stylesheet/style.css">
+
+        <!--Website Title-->
+        <title>DAK's Blog | Official Website</title>
+
+        <!-- A style to align the blog contents -->
+        <style>
+            #blogbox
+            {
+                text-align:center;
+            }
+
+            #blogbox .BlogBoxContent
+            {
+                display:inline-grid;
+                margin:auto;
+                padding:10px;
+
+                text-align:center;
+            }
+            #blogbox .BlogBoxContent img
+            {
+                max-width: 600px;
+                max-height: auto;
+            }
+        </style>
+
+    </head>
+
+    <!-- Body : The Website content below is displayed on the browser -->
+    <body>
+
+        <!-- Header : The elements which are displayed at the top of the page -->
+        <header>
+
+            <!-- Display the Website branding here -->
+            <div class="container">
+                <img src="../Images/branding.png">
+            </div>
+
+            <!-- Navigation Menu : Displays a list of other accessible pages -->
+            <nav>
+
+                <!-- List of the pages, hyperlinking the same to the target -->
+                <ul>
+                    <a href="../../index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <li class="current">Blog</li>
+                    <a href="Contact.html"><li>Contact Me</li></a>
+                    <a href="https://dak404.github.io/Truncheon"><li><img src = "../../Assets/Images/Logo.png" width="110px"></li></a>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Section "Newsletter" : Display the news here -->
+        <section id="newsletter">
+            <!-- Marquee : Move the news right to left to read it -->
+            <marquee onmouseover="this.stop();" onmouseout="this.start();">| I plan to resume streaming on Twitch in a few weeks. Watch the streams on <a href="https://twitch.tv/dak404">Twitch</a>! | My friends and I have opened an Instagram page, relating to motorsports and Formula 1, called <a href="https://www.instagram.com/chicanelane/">Chicane Lane</a>. Follow our page for motorsport/F1 news and memes! | Did you find the 404 Easter Egg on my website? Let me know if you have! |</marquee>
+        </section>
+
+    <section id="main">
+
+      <div class="container">
+
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h2>Timeline/QuickLink Archives:</h2>
+            <p>NEW! : Hover/touch the year/month to navigate through posts easily!</p>
+            <ul class="year">
+                 <li>2021
+                 <ul>
+                    <li class="month">May
+                        <ul class="posts">
+                            <a href="#27-May-2021"><li>#1. May Update</li></a>
+                        </ul>
+                    </li>
+                    <li class="month">March and April
+                        <ul class="posts">
+                            <a href="#26-Apr-2021"><li>#1. March and April Update</li></a>
+                        </ul>
+                    </li>
+                    <li class="month">February
+                        <ul class="posts">
+                            <a href="#25-Feb-2021"><li>#1. February Update</li></a>
+                        </ul>
+                    </li>
+                    <li class="month">January
+                        <ul class="posts">
+                            <a href="#19-Jan-2021"><li>#2. Projects, Progress and Plans</li></a>
+                            <a href="#5-Jan-2021"><li>#1. Welcome To My Website! (and Blog)</li></a>
+                        </ul>
+                    </li>
+                 </ul>
+                </li>
+            </ul>
+          </div>
+        </aside>
+
+
+        <article id="main-col">
+          <h1>DAK's Bl@g</h1>
+          <ul id="services">
+
+                <li class="blogEntry" id="27-May-2021">
+                    <h2 class="heading">May Update</h2>
+                    <h4 class="time">27-May-2021  0308 AM  +0530 GMT</h4>
+                    <p>Hello there!</p>
+                    <p>It has been a bad enough year for everyone since 2020 since COVID spread rampantly everywhere. I hope all are doing well, and are keeping your hopes high for this debacle to end soon.</p>
+                    <h3>Truncheon Update</h3>
+                    <p>There have been a lot of concept and code being tried and mixed around to bring out a better and stable codebase regarding the Truncheon's architecture. There was a single feature that was lacking since the first iteration of Nion till Mosaic, but it has been conceptualized so many times over every iteration that one can remember about.<h4><b>Scripting Features</b></h4>
+                    <p>The scripting feature is something that has been conceptualized for a long time which has not been materialized since <i>Flux-Nova</i> iteration.</p>
+                    <p>Imagine this: You login to the program, and you need to perform the same set of instructions all over again. You'll find it tedious to repeat the same set of commands over a period of time, and it is a waste of time to perform the same tasks all over again, every single day.</p>
+                    <p>Imagine this now: You write a script file once, say <b><i>"StartUp.nScript"</i></b> and then run it with a single line of code when the user desires! Or even better, you can automate that as soon as you login to the program and sip your preferred beverage as you watch the program run the script file for you. Simple and convinient, right?</p>
+                    <p>So the <b><i>.nScript</i></b> file is a Nion script file used to execute a batch commands by a user. This is designed to be compatible and scalable with the evolution of the project architecture and scale. Nion scripts will help the users to quickly execute a set of batch of instructions at a time, thereby saving time for the users to avoid running the same commands all over again. Note that there will be a directory created "./Users/&lt;Username&gt;/Scritps" where all the user scripts will be stored. Features shall be added to check if there are any scripts that are required to run after logging in.</p>
+                    <p>The scripting feature supports scripts to run as an <b>Administrator</b> using the <b>Pseudo</b> engine, which will elevate the user status to an Administrator status on a successful authentication to provide extra features which the normal users are restricted to use.</p>
+
+                    <h3>Other Updates</h3>
+                    <p>I plan to make a new blog post talking about privacy and how to protect your data and information. If time permits, I shall blog it over here!</p>
+                    <p>I have also been working on a patch for Mosaic to improve its performance and fix a few known issues. The update will be rolled out in the soon. Mosaic's update will remove the functionality of restart since there are a lot of issues regarding the program's restart feature. <p><b>NOTE:</b> THIS ISSUE HAS BEEN ADDRESSED AND HAS BEEN FIXED IN TRUNCHEON. SINCE THIS FIX REQUIRED AN ENTIRE REWORK ON THE ARCHITECTURE, MOSAIC WILL NOT BE GETTING THE FIX. USERS ARE RECOMMENDED TO MIGRATE TO TRUNCHEON AS SOON AS IT HAS BEEN RELEASED IF THEY NEED AN ENHANCED IMPLEMENTATION OF THE FEATURES PRESENT IN MOSAIC.</p></p>
+                    <hr>
+                    <p>That'd be all for this blog post though! Stay tuned!<BR>DAK</p>
+                    </p>
+
+
+                </li>
+
+                <li class="blogEntry" id="26-Apr-2021">
+
+                <h2 class="heading">March and April Update</h2>
+                <h4 class="time">26-April-2021  0405 PM +0530 GMT</h4>
+                <p>Hello!</p>
+                <p>This is the blog post which will update y'all on what's been happening for more than a month.</p>
+                <h3>Project Status and What Happened in March</h3>
+                <p>Uni has been a bit time consuming which took most of the time of the day to complete the uni work. There has been a bit of an update to <a href = "https://github.com/DAK404/Truncheon">Truncheon</a>, where the components are being rewritten to optimize the code and program performance. The <a href="https://dak404.github.io/Truncheon">Truncheon Website</a> is up, which has all the required details about the program. The readme file should provide a complete overview about the program. The program documentation is not yet available, it will be completed soon!</p>
+
+                <h3>Online Accounts Security and Safety Tips</h3>
+                <p>Aside from Truncheon, I've been reading about people having their accounts compromised or hacked. This can generally happen when people use the same credentials across services or websites. For example, using the same password for both Gmail and Outlook is risky. If either account credentials are compromised, the other account too has a high chance that it would be compromised too.</p>
+
+                <div style="border: 1px solid; padding: 20px;">
+                    <p>While blogging this, I decided to include this section which will talk about how to keep your accounts secured. The following suggestions/recommendations can help you to keep your accounts safe.</p>
+
+                    <ul>
+                        <li>Use different password for every website or service.</li>
+                        <li>Use a popular and trusted password manager (like <a href = "https://www.dashlane.com/">Dashlane</a>) to help in generating a random, strong, new password, keeping a list of password safely, all in one place and for automatic logins for applications and websites.</li>
+                        <li>Please check if the website uses "https" than "http". If you do not know how to check that, please install this extension called <a href = "https://www.eff.org/https-everywhere">HTTPS Everywhere</a> which will warn you if a site is downgrading from an https to an http site. An attack can be done only when the site is in http and the protocol is not secured.</li>
+                        <li>Use 2 Factor Authentication! This may seem annoying but you will know if someone tries to login or compromise your account. This feature is the most important feature that one must enable if available!</li>
+                        <li>Regularly check if your account has been compromised by using this website called <a href = "https://haveibeenpwned.com/">haveibeenpwned</a>. A positive result will mean that some or all of your details have been leaked which means that it is not safe to use the same password anywhere else. A new password must be used to maximise security.</li>
+                        <li>Do not share your personal password to anyone! If you need others to access the same account, use a simple yet unique password which cannot be used again, after the person stops using it.</li>
+                        <li>A strong password must have atleast 8 characters, 1 uppercase character, 1 lowercase character, 1 digit and 1 special character. This will mean that guessing the password becomes difficult for others who do not know it.</li>
+                        <li>Use trusted and verified programs! Do not try to pirate or run software that seems to be sketchy or shady.</li>
+                        <li>Use updated OS versions and the softwares! This will help in keeping your details private by mitigating or fixing the security vulnerabilities.</li>
+                        <li>Prefer to use open source softwares. This means that the community or people will have access to the source code, which will make sure that security issues and problems can be easily detected and patched unlike closed source softwares which is hard to test and implement security measures compared to open source software.</li>
+                    </ul>
+
+                    <p>I really hope that someone finds this section useful to keep their account secure! Well, talks about privacy is for another day though!</p>
+                </div>
+
+
+                <p>That'd be all from my side for 2 months! I hope you all are doing well and I wish all of you good health! Take care and stay tuned!<BR>DAK</p>
+                <a href="#sidebar">Back to Top</a>
+
+              </li>
+
+              <li class="blogEntry" id="25-Feb-2021">
+
+              <h2 class="heading">February Update</h2>
+              <h4 class="time">25-February-2021  0932 AM +0530 GMT</h4>
+              <p>Hello!</p>
+              <p>This is the monthly update of my blog.</p>
+              <p>I have been working on my project, which the iteration for the same is changed to <b>Truncheon</b>. Lamatshu was a project which tried to implement the new features and implementations on the Mosaic Kernel.<BR>
+              But the Mosaic Kernel had its architectural limitations which needed a new Kernel for the program to run on. This was somewhat achieved by modifying it, but did not satisfy the required security and implementation's stability. This program needed a much more advanced implementation which was needed to be developed from start.<BR>
+              Truncheon was created to have a fully reworked code to completely satisfy the boot asserts securely. This meant that the program would use the same amount of memory but at the same time increase the program security.<BR>
+              The project, now, will have the usual development cycle after completing the new program architecture. The program's source code will be opensourced on <a href="www.github.com/DAK404/Nion">GitHub</a> as usual, after the source code is stable.</p>
+              <div style="border: 1px solid">
+                    <p style="margin: 10px; text-align:center"> Here are a few screenshots of Truncheon running on Windows&reg; with the basic implementation of the kernel working. (Click on image to view it in full size)</p>
+
+                    <div id = "blogbox">
+
+                        <div class = "container">
+
+                            <div class = "BlogBoxContent">
+                                <a href="../Images/Blog/Truncheon1.png"><img src="../Images/Blog/Truncheon1.png"></a>
+
+                            </div>
+
+                            <p>Truncheon booting with the Debug Messages.</p>
+
+                            <BR>
+
+                            <div class = "BlogBoxContent">
+                                <a href="../Images/Blog/Truncheon2.png"><img src="../Images/Blog/Truncheon2.png"></a>
+                            </div>
+
+                            <p>Truncheon's shell after successful boot.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+              <p>I guess that's about it, regarding the update from January to February. Until next time then!<BR>DAK</p>
+              <a href="#sidebar">Back to Top</a>
+
+            </li>
+
+            <li class="blogEntry" id="19-Jan-2021">
+
+              <h2 class="heading">Projects, Progress and Plans</h2>
+              <h4 class="time">20-January-2021  0740 PM +0530 GMT</h4>
+              <p>Hello!</p>
+              <div style="border: 1px solid">
+              <p style="margin: 10px">Before we start off with this post, here's a massive shoutout to Chicane Lane Instagram webpage! This page is maintained by my friends, and they cover all sorts of news about Formula 1 and Motorsports! Follow it if you want 2021 to be better than 2020 xD<BR>To view the Instagram page, simply press the logo below!</p>
+              <center><a href="https://www.instagram.com/chicanelane/"><img src="../Images/Blog/ChicaneLane.png" width="150px"></a></center></div>
+              <p>This is an update about my blogging schedule, projects, progress and the plans for the same.</p>
+              <ul>
+                  <li>
+                      <h3><u>Projects</u></h3>
+                      <p>Since 2016, there would be a new version of Project Nion being developed under a certain codename. This was the same until 2020. In 2020, we saw 2 cycles: Zen Quantum and Mosaic. Each cycle lasted for 6 months, which boosted the overall program efficiency, optimization and size. Mosaic's architecture was good, but not the best. It borrowed and revived a ton of ideas which was shelved since 2015. The development cycles helped me fix fundamental security issues too. But again, I spent a lot of time, working on the project which saturated my schedule. I took a small break to re-evaluate on ideas and code samples, written way back since 2015, to get a few ideas on how the project needs to continue.<p>
+                         <ol><p>Current design and plans for Lamatshu is as follows.</p>
+                             <li><b><u>Modularity:</u></b><p>The program needs to be highly modular, which means that irrespective of the frontend, the backend implementation must work as a single unit, while providing a flexible architecture.</p></li>
+                             <li><b><u>Platform Independence:</u></b><p>This aspect focus was the least until the Mosaic Iteration, where the architectural drawbacks were reflected when trying to run Mosaic on Linux and different platforms. Lamatshu's concept and prototyped architecture proved to be efficient in many aspects which solves the issues and enables a hassle-less experience on any platform.</p></li>
+                             <li><b><u>Multi-Threading and GUI:</u></b><p>Multi-threading is an efficient way to enable even distribution of tasks across multiple threads. Since Java&trade; supports multi-threading, I am considering on including APIs which will make programs run using multiple threads.</p><p>The aspect of a GUI has been almost non-existent since 2013. But looking at people's preferences and ideas, it would make sense to add a GUI mode to appeal to users who don't really prefer a command line interface. Graphical modes might increase memory usage, hence, it might be restricted only to the client mode, whilst the server code will be CLI based.<p></li>
+                             <li><b><u>Integral Engine:</u></b><p>I plan to create a library called the <i>Integral Engine</i> which will perform fast math based calculations on Integration and Differentiation. This would mean that using an API, this library could be used for various workloads ranging from graphics to data science. THIS FEATURE IS NOT YET CONFIRMED TO BE INCLUDED, THIS FEATURE MAY NOT MAKE IT TO THE EARLY OR FINAL BUILDS OF LAMATSHU.<p></li>
+                        </ol>
+                        <p><b>Progress:</b> Lamatshu has a heavily modified core/kernel called "Amethyst" with a new file structure which will allow administrators to work with multiple kernels from different iterations. Basic APIs are being implemented and probably in the month of May or June in 2021, the code will be complete for a stable release.</p>
+                  </li>
+                  <li>
+                      <h3><u>Blogging Schedule</u></h3>
+                          <p>I plan to write a blog update every sunday or so, based on the project status and other important content such as gaming, programming and streaming. I might even cover generic content, covering my opinions on a given topic. I might miss out on writing or updating the blog on a few Sundays, but I shall try to be as regular as possible in terms of posting blog content here.</p>
+                  </li>
+                  <li>
+                      <h3><u>Future Of Content Creation</u></h3>
+                          <p>I shall begin streaming on Twitch in a few weeks. I have a lot planned for this year in terms of YouTube content and in programming too. I will cover content about how to get started with programming, which might (I hope) help learners and those new to coding understand and practice coding in an efficient and elegant way. I shall try to make the videos as simple as possible which should help people to understand the concepts easily.</p>
+                  </li>
+             </ul>
+             <p><b>TL;DR</b>, I'm back! (sort of xD)</p>
+              <p>Until next time then!<BR>DAK</p>
+              <a href="#sidebar">Back to Top</a>
+
+            </li>
+
+            <li class="blogEntry" id="5-Jan-2021">
+
+              <h2 class="heading">Welcome To My Website! (and Blog)</h2>
+              <h4 class="time">05-January-2021  0141 AM +0530 GMT</h4>
+              <p>Hello all!</p>
+              <p>A very Happy New Year to all! I welcome you all to my website's brand new Blog! I shall be posting content here frequently about coding, gaming or any random topic here. In this post, I am covering the Blog system. This has been done in such a way that its an easy way to express myself in this space which will talk about anything and everything.</p>
+              <p>Navigation has been made easy! On the right hand side, you will see links to all my posts which will take you to the desired post. On the left hand side you can read my blog content, either manually scrolling through each post or using the quick links. At the end of the blog you shall find a link which will take you back to the top, which will help mobile users navigate through the page.</p>
+              <p>I hope you guys like my website. I am working on Lamatshu, a successor to Project Mosaic. The repository will be made public as soon as the code is stable Stay tuned!<BR></p>
+              <p>To an amazing year ahead,<BR>DAK</p>
+              <a href="#sidebar">Back to Top</a>
+
+            </li>
+
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+        <p>Last Updated On : 25-February-2021 0941 +0530 GMT</p>
+    </footer>
+  </body>
+</html>
