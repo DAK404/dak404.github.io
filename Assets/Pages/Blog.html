@@ -82,6 +82,15 @@
             <h2>Timeline/QuickLink Archives:</h2>
             <p>NEW! : Hover/touch the year/month to navigate through posts easily!</p>
             <ul class="year">
+                 <li>2023
+                    <ul>
+                        <li class = "month">February
+                            <ul class="posts">
+                                <a href="#24-Frb-2023"><li>#1. I'm Back!</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                 </li>
                  <li>2021
                  <ul>
                     <li class="month">May
@@ -116,6 +125,86 @@
           <h1>DAK's Bl@g</h1>
           <ul id="services">
 
+            <li class="blogEntry" id="24-Feb-2023">
+                <h2 class="heading">I'm Back!</h2>
+                <h4 class="time">24-February-2023  0236  +0530 GMT</h4>
+                <p>Hello!</p>
+                <p>I have been away from blogging for a while (2 years but what the hell), but I have been working on Truncheon in the meantime.</p>
+                
+                <h3>Truncheon Update</h3>
+                <p>Soon after Truncheon's initial release in November 2021, new concepts were being written to make it better. The update was called 'Katana'. This update would contain a set of features that were being worked on separately so that the current code base would not be affected by the addition of any new features in terms of performance and security.</p>
+                <p>So now, we have Katana, and it is still being worked on.</p>
+
+                <h4>The Improvements</h4>
+                <h5>Abraxis File Integrity Checking System</h5>
+                <p>Truncheon can be run by simply downloading the source code, compiling it and then running it like any other Java program. But it didn't address the problem if a class file was bad due to an update or due to a malicious program that edits the class file.</p>
+                <p>In the <b><a href="#25-Feb-2021">February 2021 update post</a></b>, it is mentioned that a file integrity checking was being worked on to address the aforementioned problem.</p>
+                <p>Currently, the system checks the MD5 hash of the files and compares it to a Manifest file. Should any alien file be found in the Truncheon's working directory that does not exist as an entry in the Manifest file, a warning is shown to the user about the same. Should the file integrity checking fail because of a bad file or a missing manifest file, the program shall refuse to boot, until the integrity checks pass.</p>
+                <p>This implementation takes more effort and time for a bad actor who would want to tamper with the integrity of Truncheon class files. Note that the file integrity checking logic works for both Windows and Linux.</p>
+                <div id = "blogbox">
+                    <div class = "BlogBoxContent">
+                        <a href="../Images/Blog/TruncheonAbraxis.png"><img src="../Images/Blog/TruncheonAbraxis.png"></a>
+                    </div>
+                </div>
+                <h5>Kernel Prober</h5>
+                <p>If a person who would want to use multiple kernels that complies with the working of Nion Kernels, a feature has been added to the program launcher to probe and check if a kernel is bootable or not. This means that the user can check if a given kernel is bootable or not.</p>
+
+                <h5>Improved Tools</h5>
+                <p>New tools have been added to help the developers and end users to compile and sign the builds. The new tools can be used within an editor or launching it directly. Once the Binaries are compiled and signed, Truncheon can be launched as usual.</p>
+
+                <h5>IOStreams.java</h3>
+                <p>It is always useful for the end user to see color coded messages to differentiate between an error string, a warning string, an information string or a string cautioning the user about something important.</p>
+                <p>Previously, there was no color coding, making the output look dull, boring and mundane. But with Katana, that was not the case.</p>
+                <h5>- Implementation -</h5>
+                <p>Color coded outputs were possible in terminals by using char 27, the desired color separated by a ';', the desired background color and finally delimited by the ASCII character m.</p>
+                <p>The older implementation had a hard coded system to achieve the same, where the statement would look something like this <BR><BR> System.err.println((char)27 + "[31m[    ERROR    ] " + message + (char)27 + "[0m"); <BR><BR>
+                In the current implementation of the same, I tried a different approach to make a modular system to allow the user to make their own combinations of background and foreground colors for the output strings.</p>
+                <p>So rather than hard coding for every color available, it was sensible to make 2 arrays: an array for foreground colors and an array for background colors.</p>
+                <p>Now all that was needed to be done was a method that would accept the index for the same and then implement a logic to output with the desired color combination. This was done by the following implementation.</p>
+                <pre>
+import java.io.Console;
+
+public class IOStreams
+{
+    //refer to the table for colors in the screenshot
+    static String[] _textColorForeground = {"[30", "[31", "[32", "[33", "[34", "[35", "[36", "[37", "[39"};
+    static String[] _textColorBackground = {"40", "41", "42", "43", "44", "45", "46", "47", "49"};
+    
+    public static void println(int foregroundIndex, int backgroundIndex, String message)
+    {
+        try
+        {
+            System.out.println((char)27 + _textColorForeground[foregroundIndex] + ";"
+            + _textColorBackground[backgroundIndex] + "m" + message + (char)27 + "[0m");
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println(e + "Invalid Syntax.");
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}</pre>
+
+            <p>With this implementation, it is safe to say that the users who would want to built modules on top of Truncheon can now easily create color coded outputs without reinventing the wheel. Additionally, it also helps to configure color codes in the future without too much hassle.</p>
+
+            <h5>Miscellaneous Improvements</h5>
+            <p>The program has been optimized and the scripting language is now being rewritten. As of now, the memory usage has been less than 5MB. The rewritten modules are now easier to debug, read and improve due to how modular it is, compared to how it was previously.</p>
+
+            <p>Please keep an eye on the GitHub Repository to get all the latest updates regarding Truncheon!</p>
+            <p>Progress on Truncheon is slow, but its getting there. It may take time but at the end, I feel that it will be worth the wait :)</p>
+
+            <p>That's all for now, folks! Until next time then!<BR>DAK</p>
+            <a href="#sidebar">Back to Top</a>
+
+
+                
+
+            </li>
+
+
                 <li class="blogEntry" id="27-May-2021">
                     <h2 class="heading">May Update</h2>
                     <h4 class="time">27-May-2021  0308 AM  +0530 GMT</h4>
@@ -134,8 +223,7 @@
                     <p>I have also been working on a patch for Mosaic to improve its performance and fix a few known issues. The update will be rolled out in the soon. Mosaic's update will remove the functionality of restart since there are a lot of issues regarding the program's restart feature. <p><b>NOTE:</b> THIS ISSUE HAS BEEN ADDRESSED AND HAS BEEN FIXED IN TRUNCHEON. SINCE THIS FIX REQUIRED AN ENTIRE REWORK ON THE ARCHITECTURE, MOSAIC WILL NOT BE GETTING THE FIX. USERS ARE RECOMMENDED TO MIGRATE TO TRUNCHEON AS SOON AS IT HAS BEEN RELEASED IF THEY NEED AN ENHANCED IMPLEMENTATION OF THE FEATURES PRESENT IN MOSAIC.</p></p>
                     <hr>
                     <p>That'd be all for this blog post though! Stay tuned!<BR>DAK</p>
-                    </p>
-
+                    <a href="#sidebar">Back to Top</a>
 
                 </li>
 
