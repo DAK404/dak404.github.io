@@ -141,11 +141,7 @@
                 <p>In the <b><a href="#25-Feb-2021">February 2021 update post</a></b>, it is mentioned that a file integrity checking was being worked on to address the aforementioned problem.</p>
                 <p>Currently, the system checks the MD5 hash of the files and compares it to a Manifest file. Should any alien file be found in the Truncheon's working directory that does not exist as an entry in the Manifest file, a warning is shown to the user about the same. Should the file integrity checking fail because of a bad file or a missing manifest file, the program shall refuse to boot, until the integrity checks pass.</p>
                 <p>This implementation takes more effort and time for a bad actor who would want to tamper with the integrity of Truncheon class files. Note that the file integrity checking logic works for both Windows and Linux.</p>
-                <div id = "blogbox">
-                    <div class = "BlogBoxContent">
-                        <a href="../Images/Blog/TruncheonAbraxis.png"><img src="../Images/Blog/TruncheonAbraxis.png"></a>
-                    </div>
-                </div>
+                
                 <h5>Kernel Prober</h5>
                 <p>If a person who would want to use multiple kernels that complies with the working of Nion Kernels, a feature has been added to the program launcher to probe and check if a kernel is bootable or not. This means that the user can check if a given kernel is bootable or not.</p>
 
@@ -161,6 +157,13 @@
                 In the current implementation of the same, I tried a different approach to make a modular system to allow the user to make their own combinations of background and foreground colors for the output strings.</p>
                 <p>So rather than hard coding for every color available, it was sensible to make 2 arrays: an array for foreground colors and an array for background colors.</p>
                 <p>Now all that was needed to be done was a method that would accept the index for the same and then implement a logic to output with the desired color combination. This was done by the following implementation.</p>
+                
+                <div id = "blogbox">
+                    <div class = "BlogBoxContent">
+                        <a href="../Images/Blog/TruncheonAbraxis.png"><img src="../Images/Blog/TruncheonAbraxis.png"></a>
+                    </div>
+                </div>
+
                 <pre>
 import java.io.Console;
 
@@ -188,7 +191,7 @@ public class IOStreams
     }
 }</pre>
 
-            <p>With this implementation, it is safe to say that the users who would want to built modules on top of Truncheon can now easily create color coded outputs without reinventing the wheel. Additionally, it also helps to configure color codes in the future without too much hassle.</p>
+            <p>With this implementation, it is safe to say that the users who would want to build modules on top of Truncheon can now easily create color coded outputs without reinventing the wheel. Additionally, it also helps to configure color codes in the future without too much hassle.</p>
 
             <h5>Miscellaneous Improvements</h5>
             <p>The program has been optimized and the scripting language is now being rewritten. As of now, the memory usage has been less than 5MB. The rewritten modules are now easier to debug, read and improve due to how modular it is, compared to how it was previously.</p>
