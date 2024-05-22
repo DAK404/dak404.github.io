@@ -89,11 +89,12 @@ ul{
 }
 
 .dark a{
-  color: #FA5422;;
+  text-decoration: none;
 }
 
 .dark li{
     margin:0px 0px 0px 20px;
+    text-decoration: none;
 }
 
 .dark .month{
@@ -110,6 +111,11 @@ ul{
 
 .dark .month:hover > .posts{
     display:block;
+}
+
+.dark a:hover > li{
+  color: #ff0000;
+  text-decoration: underline;
 }
 
 /* Header **/
