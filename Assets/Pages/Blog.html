@@ -45,22 +45,16 @@
         <!-- Header : The elements which are displayed at the top of the page -->
         <header>
 
-            <!-- Display the Website branding here -->
-            <div class="container">
-                <img src="../Images/branding.png">
-            </div>
-
             <!-- Navigation Menu : Displays a list of other accessible pages -->
             <nav>
 
                 <!-- List of the pages, hyperlinking the same to the target -->
                 <ul>
-                    <a href="../../index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="Mixtape.html"><li>MixTape</li></a>
+                    <a href="../../index.html"><li><img src="../Images/branding.png" width=65px"></li></a>
+                    <a href="../Pages/Mixtape.html"><li>MixTape</li></a>
                     <li class="current">Blog</li>
-                    <a href="Contact.html"><li>Contact Me</li></a>
-                    <a href="https://dak404.github.io/Truncheon"><li><img src = "../../Assets/Images/Logo.png" width="110px"></li></a>
+                    <a href="../Pages/Contact.html"><li>Contact Me</li></a>
+                    <a href="https://dak404.github.io/Truncheon"><li><img src = "../Images/Logo.png" width="130px"></li></a>
                 </ul>
             </nav>
         </header>
@@ -123,7 +117,7 @@
 
 
         <article id="main-col">
-          <h1>DAK's Bl@g</h1>
+          <h1 style="color: #FA5422;">DAK's Bl@g</h1>
           <ul id="services">
 
             <li class="blogEntry" id="24-Feb-2023">
@@ -139,7 +133,7 @@
                 <h4>The Improvements</h4>
                 <h5>Abraxis File Integrity Checking System</h5>
                 <p>Truncheon can be run by simply downloading the source code, compiling it and then running it like any other Java program. But it didn't address the problem if a class file was bad due to an update or due to a malicious program that edits the class file.</p>
-                <p>In the <b><a href="#25-Feb-2021">February 2021 update post</a></b>, it is mentioned that a file integrity checking was being worked on to address the aforementioned problem.</p>
+                <p>In the <a href="#25-Feb-2021">February 2021 update post</a>, it is mentioned that a file integrity check was being worked. This could potentially make it more difficult for programs or people to alter any .class files.</p>
                 <p>Currently, the system checks the MD5 hash of the files and compares it to a Manifest file. Should any alien file be found in the Truncheon's working directory that does not exist as an entry in the Manifest file, a warning is shown to the user about the same. Should the file integrity checking fail because of a bad file or a missing manifest file, the program shall refuse to boot, until the integrity checks pass.</p>
                 <p>This implementation takes more effort and time for a bad actor who would want to tamper with the integrity of Truncheon class files. Note that the file integrity checking logic works for both Windows and Linux.</p>
                 
@@ -366,8 +360,9 @@ public class IOStreams
       </div>
     </section>
 
+    <!-- Footer : The elements which are displayed at the bottom of the page -->
     <footer>
-        <p>Last Updated On : 25-February-2021 0941 +0530 GMT</p>
+        <p>Last Updated On: 22-May-2024</p>
     </footer>
   </body>
 </html>
