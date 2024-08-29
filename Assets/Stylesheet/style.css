@@ -4,14 +4,13 @@
 }
 
 @font-face { 
-  font-family: ROG;
-  font-weight:bold;	
-  src: url('../Fonts/ROG.ttf');
-}
-
-@font-face { 
   font-family: ChakraPetch;	
   src: url('../Fonts/ChakraPetch.ttf');
+}
+
+@font-face {
+  font-family: PerfectDOSVGA437Win;
+  src: url('../Fonts/PerfectDOSVGA437Win.ttf');
 }
 
 a{
@@ -37,10 +36,6 @@ body{
 .bg-img{
   background:url('../Images/showcase.png')no-repeat left center;
   backdrop-filter: 10px;
-}
-
-#introduction{
-  
 }
 
 #introduction h1{
@@ -247,7 +242,7 @@ header li:hover img{
 }
 
 #summary .summary-content h3{
-  font-family:ROG;
+  font-family:PerfectDOSVGA437Win;
   font-weight:normal;
   font-size: 30px;
 }
@@ -269,7 +264,7 @@ header li:hover img{
 .nF h1{
   text-align:center;
   text-transform: uppercase;
-  font-family:ROG;
+  font-family:PerfectDOSVGA437Win;
   font-weight:normal;
   font-size:128px;
 }
@@ -277,14 +272,38 @@ header li:hover img{
 .nF h2{
   text-align:center;
   text-transform: uppercase;
-  font-family:ROG;
+  font-family:PerfectDOSVGA437Win;
     font-weight:normal;
   font-size:56px;
 }
 
 .nF p{
   text-align:center;
-  font-family:ROG;
+  font-family:PerfectDOSVGA437Win;
+    font-weight:normal;
+  font-size:25px;
+}
+
+.nS h1{
+  text-align:center;
+  text-transform: uppercase;
+  font-family:PerfectDOSVGA437Win;
+  font-weight:normal;
+  font-size:128px;
+}
+
+.nS h2{
+  text-align:center;
+  text-transform: uppercase;
+  font-family:PerfectDOSVGA437Win;
+    font-weight:normal;
+  font-size:56px;
+}
+
+.nS p{
+  text-align:center;
+  text-transform: uppercase;
+  font-family:PerfectDOSVGA437Win;
     font-weight:normal;
   font-size:25px;
 }
@@ -328,7 +347,7 @@ article#main-col h1{
     border: #AAAAAA solid 1px;
   text-align:center;
   text-transform: uppercase;
-    font-weight:normal;
+  font-weight:normal;
   padding:0px;
   margin:0px;
   font-size:40px;
