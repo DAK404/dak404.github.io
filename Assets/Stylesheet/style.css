@@ -279,8 +279,9 @@ header li:hover img{
 
 .nF p{
   text-align:center;
+  text-transform: uppercase;
   font-family:PerfectDOSVGA437Win;
-    font-weight:normal;
+  font-weight:normal;
   font-size:25px;
 }
 
